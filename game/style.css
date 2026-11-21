@@ -1,0 +1,31 @@
+/* Page frame only — the game itself is drawn on the canvas. */
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+body {
+  background: #06121a;
+  color: #e8f0e8;
+  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.frame {
+  max-width: 1280px;
+  width: 100%;
+  padding: 12px;
+}
+canvas {
+  display: block;
+  width: 100%;
+  height: auto;
+  background: #0e2f33;
+  border: 1px solid #24444a;
+  border-radius: 10px;
+}
+.caption {
+  margin: 10px 4px 0;
+  font-size: 14px;
+  color: #a9bda9;
+  text-align: center;
+}
